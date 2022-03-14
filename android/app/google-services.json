@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "918180337803",
+    "project_id": "jorgeluquebarberia",
+    "storage_bucket": "jorgeluquebarberia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918180337803:android:4326e7dd6cd453340c9c8e",
+        "android_client_info": {
+          "package_name": "com.example.app_reservas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "918180337803-9fc0t4fv9cl330m36i3tv3kroed7akve.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnmIJbLGDl2B2DemCUFrxswYpEwQgrChs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "918180337803-9fc0t4fv9cl330m36i3tv3kroed7akve.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
