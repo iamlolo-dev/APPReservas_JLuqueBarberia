@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key}) : super(key: key);
+class JLuqueBarberia extends StatefulWidget {
+  const JLuqueBarberia({Key? key}) : super(key: key);
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<JLuqueBarberia> createState() => _JLuqueBarberiaState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _JLuqueBarberiaState extends State<JLuqueBarberia> {
 
   @override
   Widget build(BuildContext context) {
@@ -122,7 +122,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               Icons.access_time_sharp,
                               color: Colors.white,
                             ),
-                            const SizedBox(width: 5),
+                            SizedBox(width: 5),
                             Text(
                               'LMMJV de 9:30 a 13:30 y de 16:00 a 20:00.',
                               style: TextStyle(color: Colors.white),
@@ -133,7 +133,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               Icons.access_time_sharp,
                               color: Colors.white,
                             ),
-                            const SizedBox(width: 5),
+                            SizedBox(width: 5),
                             Text(
                               "Sabados de 9:30 a 14:00.",
                               style: TextStyle(color: Colors.white),
@@ -144,7 +144,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               Icons.phone_android,
                               color: Colors.white,
                             ),
-                            const SizedBox(width: 5),
+                            SizedBox(width: 5),
                             Text(
                               "689 27 20 03",
                               style: TextStyle(color: Colors.white),
