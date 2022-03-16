@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:share/share.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class JLuqueBarberia extends StatefulWidget {
   const JLuqueBarberia({Key? key}) : super(key: key);
@@ -36,7 +38,10 @@ class _JLuqueBarberiaState extends State<JLuqueBarberia> {
                   child: IconButton(
                     icon: const FaIcon(FontAwesomeIcons.facebookSquare),
                     color: Colors.white,
-                    onPressed: () {},
+                    onPressed: () async {
+                      Share.share(
+                          "https://www.facebook.com/Peluquer%C3%ADa-caballeros-Jorge-Luque-793466670736679/");
+                    },
                   ),
                 ),
                 const SizedBox(width: 15),
@@ -53,7 +58,10 @@ class _JLuqueBarberiaState extends State<JLuqueBarberia> {
                   child: IconButton(
                     icon: const FaIcon(FontAwesomeIcons.instagram),
                     color: Colors.white,
-                    onPressed: () {},
+                    onPressed: () async {
+                      Share.share(
+                          "https://www.instagram.com/jl.barber_/?hl=es");
+                    },
                   ),
                 ),
                 const SizedBox(width: 15),
@@ -67,7 +75,10 @@ class _JLuqueBarberiaState extends State<JLuqueBarberia> {
                   child: IconButton(
                     icon: const FaIcon(FontAwesomeIcons.whatsapp),
                     color: Colors.white,
-                    onPressed: () {},
+                    onPressed: () async {
+                      Share.share(
+                          "https://api.whatsapp.com/send/?phone=%2B34689272003&text&app_absent=0");
+                    },
                   ),
                 ),
               ]),
@@ -140,7 +151,7 @@ class _JLuqueBarberiaState extends State<JLuqueBarberia> {
                             Text(
                               "689 27 20 03",
                               style:
-                              TextStyle(fontSize: 15, color: Colors.white),
+                                  TextStyle(fontSize: 15, color: Colors.white),
                             ),
                           ]),
                           const SizedBox(height: 5),
@@ -153,7 +164,7 @@ class _JLuqueBarberiaState extends State<JLuqueBarberia> {
                             Text(
                               "Av. Alemanya, 1, 12540 Vila-real, Castelló. ",
                               style:
-                              TextStyle(fontSize: 15, color: Colors.white),
+                                  TextStyle(fontSize: 15, color: Colors.white),
                             ),
                           ]),
                         ],

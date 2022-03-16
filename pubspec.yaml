@@ -29,6 +29,8 @@ dependencies:
   firebase_core: any
   flutter_riverpod: any
   font_awesome_flutter: any
+  share: any
+  url_launcher: any
 
 dev_dependencies:
   flutter_test:
