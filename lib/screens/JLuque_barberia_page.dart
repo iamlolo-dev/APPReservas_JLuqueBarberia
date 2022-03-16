@@ -1,7 +1,9 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:share/share.dart';
-import 'package:url_launcher/url_launcher.dart';
+
+import '../state/state_management.dart';
 
 class JLuqueBarberia extends StatefulWidget {
   const JLuqueBarberia({Key? key}) : super(key: key);
@@ -184,12 +186,28 @@ class _JLuqueBarberiaState extends State<JLuqueBarberia> {
                         style: ButtonStyle(
                             backgroundColor: MaterialStateProperty.all(
                                 Colors.red.withOpacity(0.8))),
-                        onPressed: () {},
+                        onPressed: () => processLogin(context),
                       ),
                     ) // Boton Coger cita
                   ],
                 ))), // Text Bottom
       ],
     ));
+  }
+
+  processLogin(BuildContext context) {
+    var user = FirebaseAuth.instance.currentUser;
+    if(user == null) { // user not login, show login
+      FirebaseAuthUi.instace()
+          .launchAuth([
+            AuthProvider.phone()
+      ]).then((firebaseUser){
+        //Refresh state
+        context.read(userLogged).state = firebaseUser;
+      });
+    }
+    else { // user already login, state home page
+
+    }
   }
 }

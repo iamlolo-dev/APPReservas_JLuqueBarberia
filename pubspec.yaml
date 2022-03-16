@@ -28,10 +28,9 @@ dependencies:
   firebase_auth: any
   firebase_core: any
   flutter_riverpod: any
-  font_awesome_flutter: any
+  flutter_auth_ui: ^2.4.2
+  url_launcher_web: any
   share: any
-  url_launcher: any
-
 dev_dependencies:
   flutter_test:
     sdk: flutter
