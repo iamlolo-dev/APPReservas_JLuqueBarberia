@@ -11,7 +11,7 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
   String dialCodeDigits = "+34";
-  TextEditingController _controller = TextEditingController();
+  final TextEditingController _controller = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class _LoginScreenState extends State<LoginScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SizedBox(
+            const SizedBox(
               height: 100,
             ),
             Padding(
@@ -28,7 +28,7 @@ class _LoginScreenState extends State<LoginScreen> {
               child: Image.asset("images/login.jpg"),
             ),
             Container(
-              margin: EdgeInsets.only(top: 10),
+              margin: const EdgeInsets.only(top: 10),
               child: const Center(
                 child: Text(
                   "Phone (OTP) Authentication",
@@ -36,7 +36,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
             SizedBox(
@@ -55,12 +55,12 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
             ),
             Container(
-              margin: EdgeInsets.only(top: 10, right: 10, left: 10),
+              margin: const EdgeInsets.only(top: 10, right: 10, left: 10),
               child: TextField(
                 decoration: InputDecoration(
                   hintText: "Phone Number",
                   prefix: Padding(
-                    padding: EdgeInsets.all(4),
+                    padding: const EdgeInsets.all(4),
                     child: Text(dialCodeDigits),
                   ),
                 ),
@@ -70,12 +70,15 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
             ),
             Container(
-              margin: EdgeInsets.all(15),
+              margin: const EdgeInsets.all(15),
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: () => Navigator.of(context).push(
-                    MaterialPageRoute(builder: (c) => OTPControllerScreen())),
-                child: Text("Next",
+                    MaterialPageRoute(builder: (c) => OTPControllerScreen(
+                      phone: _controller.text,
+                      codeDigits: dialCodeDigits,
+                    ))),
+                child: const Text("Next",
                     style: TextStyle(
                         color: Colors.white, fontWeight: FontWeight.bold)),
               ),
