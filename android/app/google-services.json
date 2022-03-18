@@ -1,33 +1,41 @@
 {
   "project_info": {
-    "project_number": "918180337803",
-    "project_id": "jorgeluquebarberia",
-    "storage_bucket": "jorgeluquebarberia.appspot.com"
+    "project_number": "184706855440",
+    "project_id": "barberiajluque",
+    "storage_bucket": "barberiajluque.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:918180337803:android:4326e7dd6cd453340c9c8e",
+        "mobilesdk_app_id": "1:184706855440:android:5b27ffa4924cb7ebbb5095",
         "android_client_info": {
-          "package_name": "com.example.app_reservas"
+          "package_name": "com.example.jluquebarberia_appreservas"
         }
       },
       "oauth_client": [
         {
-          "client_id": "918180337803-9fc0t4fv9cl330m36i3tv3kroed7akve.apps.googleusercontent.com",
+          "client_id": "184706855440-oc9tqe2aftghfd7qhpoa71ou20n0ple9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jluquebarberia_appreservas",
+            "certificate_hash": "d572d098cb7a96c737f5d42476e2e52ca4825bab"
+          }
+        },
+        {
+          "client_id": "184706855440-rtt5cjgpltlcu79499t31ahd1e2p0051.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBnmIJbLGDl2B2DemCUFrxswYpEwQgrChs"
+          "current_key": "AIzaSyD8koRgSyC3MBHCSF76DJ-kUWelgmo6wD8"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "918180337803-9fc0t4fv9cl330m36i3tv3kroed7akve.apps.googleusercontent.com",
+              "client_id": "184706855440-rtt5cjgpltlcu79499t31ahd1e2p0051.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

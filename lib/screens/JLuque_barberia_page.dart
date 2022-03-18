@@ -2,8 +2,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:share/share.dart';
-
-import '../state/state_management.dart';
 import 'login_page.dart';
 
 class JLuqueBarberia extends StatefulWidget {
@@ -20,7 +18,7 @@ class _JLuqueBarberiaState extends State<JLuqueBarberia> {
         body: Container(
       decoration: const BoxDecoration(
           image: DecorationImage(
-              image: AssetImage('assets/images/JLuqueBarber.jpg'),
+              image: AssetImage('assets/images/jluquebarberia.jpg'),
               fit: BoxFit.cover)), // fondo pantalla
       child: Column(mainAxisAlignment: MainAxisAlignment.end, children: [
         buttonsWidget(context),
@@ -187,28 +185,13 @@ class _JLuqueBarberiaState extends State<JLuqueBarberia> {
                         style: ButtonStyle(
                             backgroundColor: MaterialStateProperty.all(
                                 Colors.red.withOpacity(0.8))),
-                        onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (c) => LoginScreen())),
+                        onPressed: () => Navigator.of(context).push(
+                            MaterialPageRoute(builder: (c) => LoginScreen())),
                       ),
                     ) // Boton Coger cita
                   ],
                 ))), // Text Bottom
       ],
     ));
-  }
-
-  processLogin(BuildContext context) {
-    var user = FirebaseAuth.instance.currentUser;
-    if(user == null) { // user not login, show login
-      /*FirebaseAuthUi.instace()
-          .launchAuth([
-            AuthProvider.phone()
-      ]).then((firebaseUser){
-        //Refresh state
-        context.read(userLogged).state = firebaseUser;
-      });*/
-    }
-    else { // user already login, state home page
-
-    }
   }
 }
